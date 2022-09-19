@@ -1,0 +1,11 @@
+//This line of code is incorrect i believe as the progressbar should start at 1 and not 0
+
+func getProgress() -> Float {
+        return Float(questionNumber) / Float(quiz.count)
+    }
+    
+//The code should look like this. Then the progress bar will go all the way to the end.
+    
+func getProgress() -> Float {
+        return Float(questionNumber + 1) / Float(quiz.count)
+    }
